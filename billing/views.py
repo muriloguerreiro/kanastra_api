@@ -10,10 +10,6 @@ from io import TextIOWrapper
 import logging
 
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.WARNING)
-handler = logging.StreamHandler()
-handler.setLevel(logging.WARNING)
-logger.addHandler(handler)
 
 class UploadCSV(APIView):
     def post(self, request):
